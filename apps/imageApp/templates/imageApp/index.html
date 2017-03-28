@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spring Time!!!</title>
+  </head>
+  <body>
+  <h1>HEY, :D</h1>
+  <form action="{% url 'spring:uploadImage' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>
+      <input id="id_image" type="file" class="" name="image">
+    </p>
+    <input type="submit" value="Submit">
+  </form>
+  </body>
+</html>
